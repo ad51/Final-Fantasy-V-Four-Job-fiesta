@@ -109,6 +109,7 @@ void selectChaosJobs() {
 int main() {
     createListOfJobs();
     selectChaosJobs();
+    cout << "Hello";
     cout << myChosenJobs[0].jobName << endl;
     cout << myChosenJobs[1].jobName << endl;
     cout << myChosenJobs[2].jobName << endl;
