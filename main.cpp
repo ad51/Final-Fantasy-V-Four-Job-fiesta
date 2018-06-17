@@ -107,9 +107,25 @@ void selectChaosJobs() {
     }
 }
 int main() {
+    int choice = 0;
+    bool properResponse = false;
     createListOfJobs();
-    selectChaosJobs();
-    cout << "Hello";
+    cout << "Hello, welcome to the Final Fantasy V four job fiesta generator. Please select what run you would like to generate." << endl;
+    cout << "1 for a normal run" << endl;
+    cout << "2 for chaos run" << endl;
+    cin >> choice;
+    while (properResponse == false) {
+        if (choice == 1) {\
+            selectNormalRunJobs();
+            properResponse = true;
+        } else if (choice == 2) {
+            selectChaosJobs();
+            properResponse = true;
+        } else {
+            cout << "Invalid answer! Select Again." << endl;
+            cin >> choice;
+        }
+    }
     cout << myChosenJobs[0].jobName << endl;
     cout << myChosenJobs[1].jobName << endl;
     cout << myChosenJobs[2].jobName << endl;
