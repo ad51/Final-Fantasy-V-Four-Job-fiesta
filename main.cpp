@@ -130,5 +130,7 @@ int main() {
     cout << myChosenJobs[1].jobName << endl;
     cout << myChosenJobs[2].jobName << endl;
     cout << myChosenJobs[3].jobName << endl;
-    return 0;
+    cout << "Press enter key to exit.";
+    cin.ignore();
+    cin.get();
 }
